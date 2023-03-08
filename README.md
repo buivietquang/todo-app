@@ -5,6 +5,10 @@ A new Flutter project.
 # Notices
 
 - Todo app project.
+
+# Member
+
+Nguyễn Văn An, Bùi Vệt Quang, Vũ Anh Đức
 ## Getting Started
 
 This project is a starting point for a Flutter application.
