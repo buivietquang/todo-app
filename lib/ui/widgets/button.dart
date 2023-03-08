@@ -1,0 +1,35 @@
+// ignore: unnecessary_import
+import 'package:flutter/cupertino.dart';
+import 'package:flutter/material.dart';
+import 'package:flutterapp/ui/theme.dart';
+
+class MyButton extends StatelessWidget {
+  final String label;
+  final Function()? onTap;
+  const MyButton({super.key, required this.label, required this.onTap});
+
+  @override
+  Widget build(BuildContext context) {
+    return GestureDetector(
+      onTap: onTap,
+      child: Container(
+        width: 120,
+        height: 60,
+        decoration: BoxDecoration(
+            borderRadius: BorderRadius.circular(20),
+            color: Colors.blue.shade900
+            ),
+         child: Align(
+          alignment: Alignment.center,
+            child:Text(
+              textAlign : TextAlign.center,
+              label,
+              style: TextStyle(
+                color : Colors.white,
+              ),
+            ),
+         )
+          ),
+      );
+  }
+}
